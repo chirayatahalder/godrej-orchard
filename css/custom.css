@@ -153,8 +153,17 @@ h1 {
 }
 .collection .collection-left {
   position: relative;
-  height: 50vh;
+  height: 60vh;
   z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .collection .collection-left .collection-left-inner {
   position: absolute;
@@ -170,6 +179,7 @@ h1 {
 .collection .collection-left .collection-left-inner h2 {
   color: var(--primary-color);
   text-transform: uppercase;
+  font-size: 40px;
 }
 .collection .collection-left .collection-left-inner h2 span {
   color: var(--secondary-color);
@@ -190,6 +200,7 @@ h1 {
 }
 .collection .collection-right {
   position: relative;
+  right: 115px;
 }
 .collection .collection-right .collection-right-inner {
   width: 100%;
@@ -298,7 +309,7 @@ h1 {
   margin: 40px 0;
 }
 .about-us .about-us-left .about-us-left-inner img {
-  width: 200px;
+  width: 100%;
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -383,6 +394,14 @@ h1 {
   color: var(--secondary-color);
   text-transform: uppercase;
 }
+.footer-outer-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
 .gallery {
   width: 100%;
   padding-top: 100px;
@@ -460,14 +479,14 @@ h1 {
   display: inline-block;
   padding-left: 10px;
 }
-.floor-plan .floor-plan-left {
-  width: 100%;
-}
-.floor-plan .floor-plan-left h2 {
+.floor-plan h2 {
   color: var(--primary-color);
   text-transform: uppercase;
   font-family: 'Playfair Display', serif;
   font-weight: 700;
+}
+.floor-plan .floor-plan-left {
+  width: 100%;
 }
 .floor-plan .floor-plan-left img {
   width: 100%;
@@ -632,12 +651,12 @@ h1 {
   display: block;
   top: -10px;
   content: '';
-  right: -60px;
+  right: -50px;
 }
 .we-know-1 .we-know .col-md-7 .we-know-right .we-know-right-inner .owl-nav .owl-next span {
   position: absolute;
   bottom: -350%;
-  right: -8%;
+  right: -7%;
 }
 .we-know-1 .we-know .col-md-7 .we-know-right .we-know-right-inner a.anchor {
   text-decoration: none;
@@ -854,12 +873,11 @@ h1 {
 .footer .footer-outer p {
   margin-bottom: 10px;
   color: #fff;
-  opacity: 0.6;
+  text-align: left;
 }
 .footer .footer-outer p a {
   text-decoration: none;
   color: #fff;
-  opacity: 0.6;
 }
 .footer .footer-outer .form-sub {
   display: block;
@@ -913,9 +931,11 @@ h1 {
 }
 .footer .footer-bottom .footer-bottom-inner p {
   color: #fff;
-  opacity: 0.6;
 }
 @media screen and (max-width: 426px) {
+  .we-know-1 .we-know .col-md-7 .we-know-right .we-know-right-inner .owl-nav .owl-next {
+    display: none;
+  }
   .call-btn .btn-secondary {
     padding: 10px 0 !important;
   }
@@ -966,11 +986,14 @@ h1 {
     bottom: -30%;
   }
   .collection .collection-left {
-    height: 30vh;
+    height: 35vh;
     padding: 40px 0;
   }
   .collection .collection-left .collection-left-inner {
     width: 90%;
+  }
+  .collection .collection-right {
+    right: 0px;
   }
   .collection .collection-right .collection-right-inner .collection-right-inner-1 {
     left: -38%;
@@ -1043,7 +1066,7 @@ h1 {
   }
   .we-know .we-know-right .we-know-right-inner .owl-next span {
     bottom: -360% !important;
-    right: -16% !important;
+    right: -12% !important;
   }
   .gallery {
     padding-bottom: 0px !important;
@@ -1106,21 +1129,33 @@ h1 {
   .footer {
     padding-top: 0px !important;
   }
-  .footer .padbot {
-    padding-bottom: 0px !important;
-  }
-  .footer .padbot .footer-outer {
+  .footer .footer-outer {
     text-align: center;
+    margin: 10px 0;
   }
-  .footer .padbot .footer-outer .form-sub {
+  .footer .footer-outer .form-sub {
     margin: 10px auto;
   }
-  .footer .padbot .footer-outer h4 {
+  .footer .footer-outer h4 {
     margin-bottom: 0px;
     margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .footer .footer-outer p {
+    text-align: center;
   }
   .footer .footer-bottom-inner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .we-know-1 .we-know .col-md-7 .we-know-right .we-know-right-inner {
+    width: 100% !important;
+  }
+  .we-know-1 .we-know .col-md-7 .we-know-right .we-know-right-inner .we-know-right-inner-1 {
+    width: 100%;
+  }
+  .we-know-1 .we-know .col-md-7 .we-know-right .we-know-right-inner .we-know-right-inner-2 {
+    width: 100%;
   }
 }

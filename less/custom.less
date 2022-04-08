@@ -194,7 +194,8 @@ h1 {
     // background-position: center;
     // background-repeat: no-repeat;
     position: relative;
-    .abs-bg{
+
+    .abs-bg {
         position: absolute;
         left: 0%;
         width: 100%;
@@ -208,8 +209,11 @@ h1 {
 
     .collection-left {
         position: relative;
-        height: 50vh;
+        height: 60vh;
         z-index: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .collection-left-inner {
             position: absolute;
@@ -225,6 +229,7 @@ h1 {
             h2 {
                 color: var(--primary-color);
                 text-transform: uppercase;
+                font-size: 40px;
 
                 span {
                     color: var(--secondary-color);
@@ -254,6 +259,7 @@ h1 {
     .collection-right {
         position: relative;
         // height: 60vh;
+        right: 115px;
 
         .collection-right-inner {
             width: 100%;
@@ -385,9 +391,9 @@ h1 {
     .about-us-left {
         .about-us-left-inner {
             margin: 40px 0;
-            
+
             img {
-                width: 200px;
+                width: 100%;
                 height: 250px;
                 object-fit: cover;
                 padding: 5px;
@@ -499,6 +505,15 @@ h1 {
     }
 }
 
+.footer-outer-1 {
+    display: flex;
+    justify-content: space-evenly;
+
+    .footer-outer-2 {
+        // margin-right: 25px;
+    }
+}
+
 
 .gallery {
     width: 100%;
@@ -593,15 +608,16 @@ h1 {
         }
     }
 
+    h2 {
+        color: var(--primary-color);
+        text-transform: uppercase;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+    }
+
     .floor-plan-left {
         width: 100%;
 
-        h2 {
-            color: var(--primary-color);
-            text-transform: uppercase;
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-        }
 
         img {
             width: 100%;
@@ -688,7 +704,7 @@ h1 {
 
     .we-know {
         position: relative;
-                z-index: 5;
+        z-index: 5;
         width: 100%;
         height: auto;
         background: url('../images/Godrej_Seven_Banner_1200x600-03.jpg');
@@ -770,13 +786,13 @@ h1 {
                                 display: block;
                                 top: -10px;
                                 content: '';
-                                right: -60px;
+                                right: -50px;
                             }
 
                             span {
                                 position: absolute;
                                 bottom: -350%;
-                                right: -8%;
+                                right: -7%;
                             }
 
                         }
@@ -1022,12 +1038,13 @@ h1 {
         p {
             margin-bottom: 10px;
             color: #fff;
-            opacity: 0.6;
+            // opacity: 0.6;
+            text-align: left;
 
             a {
                 text-decoration: none;
                 color: #fff;
-                opacity: 0.6;
+                // opacity: 0.6;
 
             }
         }
@@ -1083,7 +1100,7 @@ h1 {
 
             p {
                 color: #fff;
-                opacity: 0.6;
+                // opacity: 0.6;
             }
         }
 
@@ -1092,6 +1109,11 @@ h1 {
 }
 
 @media screen and (max-width: 426px) {
+
+    .we-know-1 .we-know .col-md-7 .we-know-right .we-know-right-inner .owl-nav .owl-next{
+        display: none;
+    }
+
     .call-btn {
         .btn-secondary {
             // white-space: nowrap;
@@ -1112,23 +1134,24 @@ h1 {
     }
 
     .banner {
-        .container-fluid{
-            img{
+        .container-fluid {
+            img {
                 width: 100%;
             }
+
             .banner-left {
                 height: 60vh;
-    
+
                 .banner-left-inner {
-    
+
                     h1 {
                         font-size: 35px;
                     }
-    
+
                     width: 90%;
                 }
             }
-    
+
             .banner-right {
                 // height: 50vh;
                 display: none;
@@ -1136,21 +1159,24 @@ h1 {
         }
     }
 
-    .amenities{
-        .amenities-card{
+    .amenities {
+        .amenities-card {
             padding: 30px 0;
         }
     }
 
-    .social-1{
-        .call-btn{
+    .social-1 {
+        .call-btn {
             width: 100%;
-            .btn-secondary:nth-child(1){
+
+            .btn-secondary:nth-child(1) {
                 padding-left: 25px !important;
             }
-            a{
+
+            a {
                 font-size: 14px;
-                i{
+
+                i {
                     margin-right: 5px !important;
                 }
             }
@@ -1159,11 +1185,13 @@ h1 {
 
     .collection {
         padding-bottom: 0px !important;
-        .abs-bg{
+
+        .abs-bg {
             bottom: -30%;
         }
+
         .collection-left {
-            height: 30vh;
+            height: 35vh;
             padding: 40px 0;
 
             .collection-left-inner {
@@ -1172,6 +1200,7 @@ h1 {
         }
 
         .collection-right {
+            right: 0px;
             .collection-right-inner {
                 .collection-right-inner-1 {
                     left: -38%;
@@ -1204,11 +1233,12 @@ h1 {
         }
     }
 
-    .floor-plan{
+    .floor-plan {
         padding-bottom: 0px !important;
-        .floor-plan-right{
-            ul{
-                li{
+
+        .floor-plan-right {
+            ul {
+                li {
                     width: 48%;
                     margin-bottom: 10px;
                 }
@@ -1218,10 +1248,12 @@ h1 {
 
     .about-us {
         padding-top: 90px !important;
+
         .about-us-left {
             .about-us-left-inner {
                 margin: 0px;
                 display: flex;
+
                 img {
                     width: 50%;
                     // &:nth-child(2) {
@@ -1250,6 +1282,7 @@ h1 {
 
     .amenities {
         padding-bottom: 0px !important;
+
         .amenities-card {
             span {
                 i {
@@ -1276,7 +1309,7 @@ h1 {
                 .owl-next {
                     span {
                         bottom: -360% !important;
-                        right: -16% !important;
+                        right: -12% !important;
                     }
                 }
 
@@ -1287,6 +1320,7 @@ h1 {
     .gallery {
         // padding-top: 60px !important;
         padding-bottom: 0px !important;
+
         .gallery-outer {
             ul {
                 align-items: center;
@@ -1295,12 +1329,14 @@ h1 {
                 li {
                     margin-bottom: 10px;
                     width: 48%;
-                    button{
+
+                    button {
                         padding: 15px;
                     }
                 }
             }
-            img{
+
+            img {
                 width: 100%;
                 margin: 5px 0;
             }
@@ -1308,13 +1344,13 @@ h1 {
     }
 
     .location {
-        
+
         iframe {
             height: 300px;
         }
     }
 
-    .we-know-1 .we-know .col-md-7 .we-know-right .we-know-right-inner img{
+    .we-know-1 .we-know .col-md-7 .we-know-right .we-know-right-inner img {
         height: 175px !important;
     }
 
@@ -1326,9 +1362,10 @@ h1 {
             padding: 40px 0;
 
             .subscribe-inner {
-                form{
+                form {
                     width: auto;
                 }
+
                 .p-sub {
                     margin: 0px !important;
                 }
@@ -1362,24 +1399,42 @@ h1 {
 
     .footer {
         padding-top: 0px !important;
-        .padbot{
-            padding-bottom: 0px !important;
+        .col-md-6{
+            p{
+                // text-align: left !important;
+            }
+        }
             .footer-outer {
                 text-align: center;
-    
+                margin: 10px 0;
+
                 .form-sub {
                     margin: 10px auto;
                 }
-    
+
                 h4 {
                     margin-bottom: 0px;
                     margin-top: 30px;
+                    margin-bottom: 10px;
+                    text-align: center;
                 }
+                p{
+                    text-align: center;
+                }
+                
             }
-        }
 
         .footer-bottom-inner {
             flex-wrap: wrap;
         }
+    }
+    .we-know-1 .we-know .col-md-7 .we-know-right .we-know-right-inner{
+        width: 100% !important;
+    }
+    .we-know-1 .we-know .col-md-7 .we-know-right .we-know-right-inner .we-know-right-inner-1{
+        width: 100%;
+    }
+    .we-know-1 .we-know .col-md-7 .we-know-right .we-know-right-inner .we-know-right-inner-2{
+        width: 100%;
     }
 }

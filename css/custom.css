@@ -390,7 +390,7 @@ h1 {
 }
 .amenities {
   width: 100%;
-  padding-top: 100px;
+  padding-top: 145px;
 }
 .amenities h2 {
   color: var(--primary-color);
@@ -420,7 +420,7 @@ h1 {
 }
 .gallery {
   width: 100%;
-  padding-top: 100px;
+  padding-top: 145px;
 }
 .gallery h2 {
   color: var(--primary-color);
@@ -478,7 +478,7 @@ h1 {
 }
 .floor-plan {
   width: 100%;
-  padding-top: 100px;
+  padding-top: 145px;
 }
 .floor-plan a.anchor {
   text-decoration: none;
@@ -559,7 +559,7 @@ h1 {
   border-radius: 8px 8px 0 0;
 }
 .location {
-  padding-top: 100px;
+  padding-top: 145px;
   width: 100%;
 }
 .location .container-fluid {
@@ -578,7 +578,7 @@ h1 {
   height: 600px;
 }
 .we-know-1 {
-  padding-top: 80px;
+  padding-top: 125px;
   background: #ddedfc;
 }
 .we-know-1 .we-know {
@@ -1035,6 +1035,7 @@ h1 {
   }
   .floor-plan {
     padding-bottom: 0px !important;
+    padding-top: 60px !important;
   }
   .floor-plan .floor-plan-right ul li {
     width: 48%;
@@ -1066,9 +1067,13 @@ h1 {
   }
   .amenities {
     padding-bottom: 0px !important;
+    padding-top: 60px !important;
   }
   .amenities .amenities-card span i {
     font-size: 65px;
+  }
+  .we-know-1 {
+    padding-top: 30px !important;
   }
   .we-know {
     height: auto;
@@ -1088,6 +1093,7 @@ h1 {
     right: -12% !important;
   }
   .gallery {
+    padding-top: 60px !important;
     padding-bottom: 0px !important;
   }
   .gallery .gallery-outer ul {
@@ -1107,6 +1113,9 @@ h1 {
   .gallery .gallery-outer img {
     width: 100%;
     margin: 5px 0;
+  }
+  .location {
+    padding-top: 60px !important;
   }
   .location iframe {
     height: 300px;

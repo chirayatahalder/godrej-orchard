@@ -980,6 +980,8 @@ h1 {
   }
   .banner .container-fluid .banner-right {
     background-size: contain;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 40vh;
   }
   .amenities .amenities-card {
@@ -1002,10 +1004,6 @@ h1 {
   }
   .collection .abs-bg {
     bottom: -30%;
-  }
-  .collection .collection-left {
-    height: 50vh;
-    padding: 10px 0;
   }
   .collection .collection-left .collection-left-inner {
     width: 90%;

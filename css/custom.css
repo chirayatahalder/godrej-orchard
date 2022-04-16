@@ -967,7 +967,7 @@ h1 {
   }
   .banner .container-fluid img {
     width: 100%;
-    top: 12%;
+    bottom: 0px;
   }
   .banner .container-fluid .banner-left {
     height: 50vh;

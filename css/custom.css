@@ -43,7 +43,6 @@ h1 {
 }
 .navbar-light {
   background: #001439 !important;
-  padding: 20px 0;
 }
 .navbar-light .navbar-nav .nav-link.active {
   color: #fff;

@@ -390,7 +390,7 @@ h1 {
 }
 .amenities {
   width: 100%;
-  padding-top: 145px;
+  padding-top: 80px;
 }
 .amenities h2 {
   color: var(--primary-color);
@@ -420,7 +420,7 @@ h1 {
 }
 .gallery {
   width: 100%;
-  padding-top: 145px;
+  padding-top: 80px;
 }
 .gallery h2 {
   color: var(--primary-color);
@@ -478,7 +478,7 @@ h1 {
 }
 .floor-plan {
   width: 100%;
-  padding-top: 145px;
+  padding-top: 80px;
 }
 .floor-plan a.anchor {
   text-decoration: none;
@@ -559,7 +559,7 @@ h1 {
   border-radius: 8px 8px 0 0;
 }
 .location {
-  padding-top: 145px;
+  padding-top: 80px;
   width: 100%;
 }
 .location .container-fluid {
@@ -578,7 +578,7 @@ h1 {
   height: 600px;
 }
 .we-know-1 {
-  padding-top: 125px;
+  padding-top: 40px;
   background: #ddedfc;
 }
 .we-know-1 .we-know {
